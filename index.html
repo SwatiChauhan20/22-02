@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <aside class="mdc-drawer mdc-drawer--dismissible">
+    <div class="mdc-drawer__content">
+      <div class="mdc-list">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-top">
+          <a href="#"><img src="gmail.png" alt="gmail" height="50px" width="auto"></a>
+        </section>
+        <hr>
+        <section class="compose_btn">
+         <button class="mdc-fab mdc-fab--extended">
+          <span class="material-icons mdc-fab__icon">add</span>
+          <span class="mdc-fab__label">Compose</span>
+        </button>
+      </section>
+      <a class="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">inbox</i>
+        <span class="mdc-list-item__text">Inbox</span>
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">star</i>
+        <span class="mdc-list-item__text">Starred</span>
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">send</i>
+        <span class="mdc-list-item__text">Sent</span>
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">drafts</i>
+        <span class="mdc-list-item__text">Drafts</span>
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">email</i>
+        <span class="mdc-list-item__text">All Mail</span>
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">delete</i>
+        <span class="mdc-list-item__text">Trashed</span>
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">error</i>
+        <span class="mdc-list-item__text">Spam</span>
+      </a>
+      <a class="mdc-list-item" href="#">
+        <i class="material-icons mdc-list-item__graphic" aria-hidden="true">label_important</i>
+        <span class="mdc-list-item__text">Important</span>
+      </a>
+      <hr class="mdc-list-divider">
+    </div>
+  </div>
+</aside>
+
+<!-- <div class="mdc-drawer-scrim"></div> -->
+
+<div class="mdc-drawer-app-content">
+  <header class="mdc-top-app-bar app-bar" id="app-bar">
+    <div class="mdc-top-app-bar__row header_top">
+      <div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-top">
+        <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        <a href="#"><img src="gmail.png" alt="gmail" height="50px" width="auto"></a>
+      </section>
+    </section>
+  </div>
+    <div class="mdc-layout-grid__cell--span-8">
+      <i class="material-icons">search</i>
+      <input class="gb_Df" aria-label="Search mail" autocomplete="off" placeholder="Search mail" value="" name="q" type="text" dir="ltr" spellcheck="false" aria-haspopup="true" aria-live="off" aria-owns="gs_sbt50">
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-2">
+      <div class="profile">
+      <i class="material-icons">grid_on</i>
+      <i class="material-icons">notifications_none</i>
+      <img src="profile.png" height="30px" width="30px" border-radius="50%">
+    </div>
+  </div>
+  <hr>
+  </div>
+
+    </div>
+  </header>
+
+  <main class="main-content" id="main-content">
+    <div class="mdc-top-app-bar--fixed-adjust">
+      <!-- tab section -->
+
+      <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+          <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">inbox</span>
+                  <span class="mdc-tab__text-label">Primary</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+              <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">group</span>
+                  <span class="mdc-tab__text-label">Social</span>
+                </span>
+                <span class="mdc-tab-indicator">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+              <button class="mdc-tab" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">loyalty</span>
+                  <span class="mdc-tab__text-label">Pramotion</span>
+                </span>
+                <span class="mdc-tab-indicator">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <ul class="mdc-list">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell--span-2">
+           <li class="mdc-list-item" tabindex="0">
+            <span class="mdc-list-item__text mdc-typography--headline6">
+              <div class="mdc-form-field">
+                <div class="mdc-checkbox">
+                  <input type="checkbox"
+                  class="mdc-checkbox__native-control"
+                  id="checkbox-1"/>
+                  <div class="mdc-checkbox__background">
+                    <svg class="mdc-checkbox__checkmark"
+                    viewBox="0 0 24 24">
+                    <path class="mdc-checkbox__checkmark-path"
+                    fill="none"
+                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                  </svg>
+                  <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+              </div>
+            </div>
+          </span>
+          <i class="material-icons">star_border</i>
+          <i class="material-icons">label_important</i>
+          <span>Facebook</span>
+        </li>
+      </div>
+      <div class="mdc-layout-grid__cell--span-9"><p>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</p></div>
+      <div class="mdc-layout-grid__cell--span-1">22nd feb</div>
+    </div>
+    <li role="separator" class="mdc-list-divider"></li>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-2">
+       <li class="mdc-list-item" tabindex="0">
+        <span class="mdc-list-item__text mdc-typography--headline6">
+          <div class="mdc-form-field">
+            <div class="mdc-checkbox">
+              <input type="checkbox"
+              class="mdc-checkbox__native-control"
+              id="checkbox-1"/>
+              <div class="mdc-checkbox__background">
+                <svg class="mdc-checkbox__checkmark"
+                viewBox="0 0 24 24">
+                <path class="mdc-checkbox__checkmark-path"
+                fill="none"
+                d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+              </svg>
+              <div class="mdc-checkbox__mixedmark"></div>
+            </div>
+          </div>
+        </div>
+      </span>
+      <label><i class="material-icons">star_border</i></label> 
+      <label><i class="material-icons">label_important</i></label> 
+      <span><b>Facebook</b></span>
+    </li>
+  </div>
+  <div class="mdc-layout-grid__cell--span-9"><p><b>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</b></p></div>
+  <div class="mdc-layout-grid__cell--span-1"><b>22nd feb</b></div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">label_important</i>
+  <span>Facebook</span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</p></div>
+<div class="mdc-layout-grid__cell--span-1">22nd feb</div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <label><i class="material-icons">star_border</i></label> 
+  <label><i class="material-icons">label_important</i></label> 
+  <span><b>Facebook</b></span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p><b>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</b></p></div>
+<div class="mdc-layout-grid__cell--span-1"><b>22nd feb</b></div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">label_important</i>
+  <span>Facebook</span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</p></div>
+<div class="mdc-layout-grid__cell--span-1">22nd feb</div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <label><i class="material-icons">star_border</i></label> 
+  <label><i class="material-icons">label_important</i></label> 
+  <span><b>Facebook</b></span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p><b>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</b></p></div>
+<div class="mdc-layout-grid__cell--span-1"><b>22nd feb</b></div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">label_important</i>
+  <span>Facebook</span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</p></div>
+<div class="mdc-layout-grid__cell--span-1">22nd feb</div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <label><i class="material-icons">star_border</i></label> 
+  <label><i class="material-icons">label_important</i></label> 
+  <span><b>Facebook</b></span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p><b>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</b></p></div>
+<div class="mdc-layout-grid__cell--span-1"><b>22nd feb</b></div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <i class="material-icons">star_border</i>
+  <i class="material-icons">label_important</i>
+  <span>Facebook</span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</p></div>
+<div class="mdc-layout-grid__cell--span-1">22nd feb</div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+<div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-2">
+   <li class="mdc-list-item" tabindex="0">
+    <span class="mdc-list-item__text mdc-typography--headline6">
+      <div class="mdc-form-field">
+        <div class="mdc-checkbox">
+          <input type="checkbox"
+          class="mdc-checkbox__native-control"
+          id="checkbox-1"/>
+          <div class="mdc-checkbox__background">
+            <svg class="mdc-checkbox__checkmark"
+            viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path"
+            fill="none"
+            d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+      </div>
+    </div>
+  </span>
+  <label><i class="material-icons">star_border</i></label> 
+  <label><i class="material-icons">label_important</i></label> 
+  <span><b>Facebook</b></span>
+</li>
+</div>
+<div class="mdc-layout-grid__cell--span-9"><p><b>Note even though size is passed in as one of the arguments, it won’t apply any media-query rulesNote even though size is passed in as one of the arguments, it won’t apply any media-query rules</b></p></div>
+<div class="mdc-layout-grid__cell--span-1"><b>22nd feb</b></div>
+</div>
+<li role="separator" class="mdc-list-divider"></li>
+</ul>
+</div>
+</main>
+</div>
+<script type="text/javascript" src="custom.js"></script>
+</body>
+</html>
+
+
+
+<!-- <div class="mdc-layout-grid__inner">
+  <div class="mdc-layout-grid__cell--span-3">
+    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-top">
+        <a href="#" class="demo-menu material-icons mdc-top-app-bar__navigation-icon">menu</a>
+        <a href="#"><img src="gmail.png" alt="gmail" height="50px" width="auto"></a>
+      </section>
+    </section>
+  </div>
+    <div class="mdc-layout-grid__cell--span-6">
+      <svg focusable="false" height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+      <input class="gb_Df" aria-label="Search mail" autocomplete="off" placeholder="Search mail" value="" name="q" type="text" dir="ltr" spellcheck="false" aria-haspopup="true" aria-live="off" aria-owns="gs_sbt50">
+      <svg focusable="false" height="24px" viewBox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg>
+
+    </div>
+    <div class="mdc-layout-grid__cell--span-3"></div>
+  </div> -->

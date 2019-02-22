@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  display: flex;
+  height: 100vh;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+}
+.mdc-top-app-bar{
+  background-color: white!important;
+  color: gray;
+}
+.main-content {
+  overflow: auto;
+  height: 100%;
+  padding: 18px;
+}
+
+.app-bar {
+  position: absolute;
+}
+.list1, .list2, .list3{
+	font-family: baseline;
+}
+
+.mdc-top-app-bar .mdc-top-app-bar__navigation-icon {
+    color: gray;
+}
+.compose_btn button{
+  background-color: white;
+  color: gray;
+  padding: 10px;
+  margin-left:35px;
+}
+
+.gb_Qf.gb_Wf .gb_Df {
+    padding-left: 2px;
+}
+.gb_Df {
+    background: transparent;
+    border: 1px solid gray;
+    font: normal 16px Roboto,sans-serif;
+    -webkit-font-variant-ligatures: none;
+    font-variant-ligatures: none;
+    height: 46px;
+    outline: none;
+    padding: 11px 20px 11px 20px;
+    width: 80%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+   margin-top: 20px;
+}
+.gb_hf button svg, .gb_hf button img {
+    padding: 10px;
+    margin: 4px;
+}
+.gb_Wa svg, .gb_Fc svg {
+    color: black;
+    opacity: .54;
+} 
+.gb_Wa svg {
+    fill: currentColor;
+}
+svg[Attributes Style] {
+    height: 24px;
+    width: 24px;
+}
+.gb_hf button svg, .gb_hf button img {
+    padding: 7px;
+    margin: 4px;
+}
+.gb_Wa svg, .gb_Fc svg {
+    color: black;
+    opacity: .54;
+}
+.profile{
+  margin-top: 28px;
+  float: right;
+}
+
+.mdc-layout-grid__inner{
+  width: 100%;
+}
